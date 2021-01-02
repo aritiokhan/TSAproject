@@ -1,30 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="https://demo.rmuif.com">
+    <img width="300" src="https://user-images.githubusercontent.com/7033377/77688568-9399c480-6fa0-11ea-9ee2-424a4a99e2e4.png" alt="Logo">
+  </a>
+</p>
 
-## Getting Started
+<p align="center">:zap: Supercharged version of Create React App with all the bells and whistles.</p>
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
+- Bootstrapped with Create React App
+- Google’s [Material Design](https://material.io) through Material-UI
+- Firebase back-end with most of their products for the web included, e.g., [Authentication](https://firebase.google.com/products/auth) and [Cloud Firestore](https://firebase.google.com/products/firestore)
+- Routing with [React Router](https://reacttraining.com/react-router/web), including protected routes and error handling
+- Extensive and well-tested mobile support with full-screen dialogs and swipeable tabs
+- Cross-platform application monitoring with [Sentry](https://sentry.io)
+
+## Demos
+
+<p align="center">
+  <a href="https://demo.rmuif.com">
+    <img src="https://user-images.githubusercontent.com/7033377/78246649-c46e8200-74e9-11ea-8137-c519dd1f7c30.png" alt="Preview">
+  </a>
+</p>
+
+### Stable
+
+- https://demo.rmuif.com
+
+### Development
+
+- https://dev.rmuif.com
+
+## Quickstart
+
+```sh
+npx create-react-app my-app --template rmuif
+cd my-app
+yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Documentation
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+https://docs.rmuif.com
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+All contributions to the project are welcome. Before submitting an issue or a pull request, read the [Contribution Guidelines](CONTRIBUTING.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Attribution
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Name                                         | Description                                                                                                                                                                                     |
+| -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [BrowserStack](https://www.browserstack.com) | Instant access to 2000+ browsers and real iOS and Android devices for cross browser testing.                                                                                                    |
+| [JetBrains](https://www.jetbrains.com)       | JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the leading Java IDE, and the Kotlin programming language. |
+| [unDraw](https://undraw.co)                  | A constantly updated design project with beautiful SVG images that you can use completely free and without attribution.                                                                         |  |
+| [Vercel](https://vercel.com)                 | Vercel is the easiest way to deploy websites. Host your web projects with zero configuration, automatic SSL, and global CDN.                                                                    |
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT

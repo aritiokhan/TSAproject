@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
+
+jobs:
+  install-build-test:
+    name: Install, build, and test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v1
+
+    - name: Get yarn cache directory path
+      id: yarn-cache-directory-path
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Restore cache
+      uses: actions/cache@v1
+      id: yarn-cache
+      with:
+        path: ${{ steps.yarn-cache-directory-path.outputs.dir }}
+        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-yarn-
+
+    - name: Install dependencies
+      run: yarn install
+      working-directory: ./template
+
+    - name: Build app
+      run: yarn build
+      working-directory: ./template
+
+    - name: Test app
+      run: yarn test
+      working-directory: ./template
+      env:
+        CI: true
